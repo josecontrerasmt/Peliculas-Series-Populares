@@ -150,7 +150,7 @@ body{
     cursor: pointer;
     font-size: 1.5em;
     position: fixed;
-    bottom: 20px;
+    bottom: 50px;
     right: 20px;
     transform: scale(0);
     transition: 0.5s;
@@ -307,7 +307,7 @@ body{
 .bi-x-circle-fill{
     position: absolute;
     top: 0px;
-    left: 0px;
+    left: 5px;
     font-size: 2.2em;
     cursor: pointer;
     color: var(--colorBoton--active);
@@ -381,6 +381,26 @@ body{
     }
 }
 @media screen and (max-width:800px){
+    .peliculas{
+        justify-content: center;
+    }
+    .pelicula{
+        width: 150px;
+        height: 330px;
+    }
+    .pelicula__titulo{
+        font-size: 14px;
+    }
+    .pelicula__genero{
+        font-size: 11px;
+    }
+    .pelicula__mas{
+        bottom: 110px;
+    }
+    .pelicula__portada{
+        height: 220px;
+    }
+
     .descripcion__contenedor{
         width: 90%;
         height: 90vh;
@@ -390,7 +410,7 @@ body{
         height: 200px;
     }
     .descripcion__info{
-        padding: 25px 15px;
+        padding: 35px 15px;
         flex-direction: column;
         align-items: center;
     }
@@ -407,8 +427,30 @@ body{
         letter-spacing: 1.2px;
     }
     .puntuacion{
-        top: 8px;
-        right: 0px;
+        top: 30px;
+        right: 30px;
+    }
+    .bi-x-circle-fill{
+        top: 23px;
+        left: 30px;
+    }
+    .contenedor__busqueda{
+        width: 80%;
+    }
+}
+@media screen and (max-width:370px){
+    .pelicula{
+        width: 200px;
+        height: 330px;
+    }
+    .pelicula__titulo{
+        font-size: 15px;
+    }
+    .pelicula__portada{
+        height: 260px;
+    }
+    .pelicula__mas{
+        bottom: 70px;
     }
 }
 
