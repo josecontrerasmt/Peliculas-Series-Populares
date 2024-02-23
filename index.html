@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peliculas Populares</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <aside class="aside">
+        <section class="aside__generos">
+            <img src="imgs/pop.gif" alt="logo" class="aside__img">
+            <h2 class="aside__titulo">Generos</h2>
+            <div class="aside__botones">
+            </div>
+        </section>
+        <i class="bi bi-list"></i>
+    </aside>
+    <main class="contenedor">
+        <div class="contenedor__titulos">
+            <h1 class="contenedor__titulo">Peliculas Populares</h1>
+            <form class="contenedor__busqueda">
+                <input class="contenedor__input" type="text" placeholder="Buscar" minlength="3" maxlength="30">
+                <button type="submit" class="contenedor__buscar"><i class="bi bi-search"></i></button>
+            </form>
+            <h3 class="contenedor__filtro"></h3>
+        </div>
+        <div class="peliculas" data-pagina="1" data-total="" data-nombre="total">
+        </div>
+        <div class="navegacion">
+            <button class="navegacion__boton" id="anterior"><i class="bi bi-caret-left-fill"></i> Anterior</button>
+            <button class="navegacion__boton" id="siguiente">Siguiente <i class="bi bi-caret-right-fill"></i></button>
+        </div>
+        <div class="desarrollado">
+            <span class="desarrollado__titulo">Desarrollado por Jose Contreras Martínez</span>
+            <a target="_blank" class="desarrollo__link" href="https://github.com/josecontrerasmt?tab=projects" rel="noopener noreferrer">
+                <i class="bi bi-github"></i>
+            </a>
+        </div>
+        <button class="contenedor__borrar" id="btn-borrar"><i class="bi bi-trash-fill"></i></button>
+    </main>
+    <div class="descripcion">
+        <div class="descripcion__contenedor">
+            <!-- <img class="descripcion__fondo" src="imgs/fondo.jfif" alt="fondo">
+            <div class="descripcion__info">
+                <img class="descripcion__img" src="imgs/portada.jfif" alt="portada">
+                <div class="descripcion__texts">
+                    <h3 class="descripcion__titulo">Gatos</h3>
+                    <span class="descripcion__anio">1520</span>
+                    <p class="descripcion__parrafo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum voluptatibus harum cupiditate temporibus suscipit nostrum odio voluptatum magni. Rerum voluptates, in saepe, autem labore ducimus quisquam nobis eum quibusdam iure optio earum atque repudiandae soluta? Nisi, minima deserunt possimus inventore fugiat voluptatem sunt, cum, nihil aut dolores assumenda impedit porro.</p>
+                </div>
+                <i class="bi bi-x-circle"></i>
+            </div> -->
+        </div>
+
+    </div>
+    <script src="main.js" type="module"></script>
+</body>
+</html>
