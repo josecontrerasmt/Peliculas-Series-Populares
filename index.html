@@ -19,11 +19,17 @@
     </aside>
     <main class="contenedor">
         <div class="contenedor__titulos">
-            <h1 class="contenedor__titulo">Peliculas Populares</h1>
-            <form class="contenedor__busqueda">
-                <input class="contenedor__input" type="text" placeholder="Buscar" minlength="3" maxlength="30">
-                <button type="submit" class="contenedor__buscar"><i class="bi bi-search"></i></button>
-            </form>
+            <h1 class="contenedor__titulo">Populares</h1>
+            <div class="contenedor__navegar">
+                <div class="contenedor__categorias" data-categoria="movie">
+                    <button class="contenedor__pelicula contenedor__categorias--active">Peliculas</button>
+                    <button class="contenedor__serie">Series TV</button>
+                </div>
+                <form class="contenedor__busqueda">
+                    <input class="contenedor__input" type="text" placeholder="Buscar" minlength="3" maxlength="30">
+                    <button type="submit" class="contenedor__buscar"><i class="bi bi-search"></i></button>
+                </form>
+            </div>
             <h3 class="contenedor__filtro"></h3>
         </div>
         <div class="peliculas" data-pagina="1" data-total="" data-nombre="total">

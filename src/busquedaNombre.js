@@ -39,10 +39,10 @@ buscarPeli.addEventListener('click', async(e)=>{
                     dato.genero_name = obtenerGenero(dato.genre_ids[0],genero);
                 }
             });
-
+            const titulo = datos.results[0].title || datos.results[0].name;
             document.querySelector('.peliculas').dataset.nombre=inputText;
             document.querySelector('.contenedor__input').value='';
-            document.querySelector('.contenedor__filtro').innerHTML=datos.results[0].title;
+            document.querySelector('.contenedor__filtro').innerHTML=titulo;
             cargarPeliculas(datos);
         }else{
             document.querySelector('.contenedor__filtro').innerHTML='';

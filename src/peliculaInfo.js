@@ -17,7 +17,10 @@ const peliculaInfo= async(pelicula)=>{
     const fondo = pelicula.backdrop_path!=null
         ?`https://image.tmdb.org/t/p/w500/${pelicula.backdrop_path}`
         :'./imgs/pop.gif';
-        
+    
+    const nombre = pelicula.title || pelicula.name;
+    const fecha = pelicula.release_date || pelicula.first_air_date;
+    const tiempo = pelicula.runtime || '';
     document.querySelector('.descripcion__contenedor').innerHTML='';
     
     document.querySelector('.descripcion__contenedor').innerHTML+=`
@@ -25,11 +28,11 @@ const peliculaInfo= async(pelicula)=>{
     <div class="descripcion__info">
         <img class="descripcion__img" src="${portada}" alt="Pelicula__Poster">
         <div class="descripcion__texts">
-            <h3 class="descripcion__titulo">${pelicula.title}</h3>
+            <h3 class="descripcion__titulo">${nombre}</h3>
             <span class="descripcion__tagline">${pelicula.tagline}</span>
             <div class="descripcion__datos">
-                <span class="descripcion__anio">${pelicula.release_date}</span>
-                <span class="descripcioni__duracion">${pelicula.runtime} min</span>
+                <span class="descripcion__anio">${fecha}</span>
+                <span class="descripcioni__duracion">${tiempo} min</span>
             </div>
             <p class="descripcion__parrafo">${pelicula.overview}</p>
         </div>

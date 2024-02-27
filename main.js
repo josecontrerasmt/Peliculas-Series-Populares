@@ -7,7 +7,7 @@ import './src/paginacion.js';
 import './src/peliculaDescripcion.js';
 import './src/mostrarAside.js';
 import './src/busquedaNombre.js';
-
+import './src/cambiarCategoria.js'
 const cargar=async()=>{
     const datos = await fetchPeliculas();
     cargarPeliculas(datos);
